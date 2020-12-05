@@ -26,4 +26,6 @@
 		　　　
 	各メソッドに対してCORSを有効化
 	
-４．
+４．Javascript
+
+	apiUrlにAPIGatewayで発行されたurlを設定
