@@ -1,0 +1,29 @@
+１．dnyamodb
+
+	テーブル「webmemo-sequence」
+	　　　※シーケンス用　
+	　　　※パーティションキー　sequenceid (String)
+	　　　
+	テーブル「webmemo」
+	　　　※通常テーブル
+	　　　※パーティションキー　memoid (String)
+	
+２．lambda
+
+	memofunctionとして作成
+	自動作成されるロールにポリシーAmazonDynamoDBFullAccessをアタッチ
+	
+３．APIGateway
+
+	POST,PUT,GET,DELETEメソッドを作成
+	
+	統合リクエスト
+		Lambda 関数にmemofunctionを設定
+		マッピングテンプレート
+		　->テンプレートが定義されていない場合 (推奨)
+		　　->application/json
+		　　　->各テンプレートを設定
+		　　　
+	各メソッドに対してCORSを有効化
+	
+４．

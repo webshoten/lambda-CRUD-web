@@ -1,0 +1,8 @@
+{
+  "counter": {
+    "N": "50"
+  },
+  "sequenceid": {
+    "S": "webmemo"
+  }
+}

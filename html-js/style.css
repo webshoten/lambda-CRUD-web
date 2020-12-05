@@ -1,0 +1,40 @@
+#output { 
+    list-style-type:none; 
+    margin: 5px; 
+    width: 250px; 
+    margin-left: -40px;
+    }
+#output li { 
+     color: #000;
+     margin: 5px; 
+     padding: 5px; 
+    }
+
+#output li .del {
+    float: right;
+}
+
+.cancel{
+ width:10%;
+ vertical-align: middle;
+ margin: 5px;
+}
+
+.memoid{
+ display:none;
+}
+
+.detail{
+    display:inline;
+}
+
+#button1{
+    display:none;
+
+}
+
+.add {
+    width: 25px;
+    vertical-align: middle;
+    margin: 5px;
+}
